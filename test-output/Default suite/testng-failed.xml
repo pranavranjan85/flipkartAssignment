@@ -3,15 +3,15 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="SearchProductTest">
+      <class name="flipkart.SearchProductTest">
         <methods>
+          <include name="searchProductTest"/>
           <include name="afterMethodActivity"/>
           <include name="beforeMethodSetup"/>
-          <include name="searchProductTest"/>
           <include name="launchBrowser"/>
           <include name="closeBrowser"/>
         </methods>
-      </class> <!-- SearchProductTest -->
+      </class> <!-- flipkart.SearchProductTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -19,14 +19,14 @@ public class HomePage
 	@FindBy(xpath = "//input[@name='q']")
 	private WebElement searchBox;
 	
-	//@FindBy(xpath = "//button[@type='submit']")
-	//private WebElement searchButton;
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement searchButton;
 
 	public void setHomePage(String heater)
 	{
 		closeLoginPage.click();
-		searchBox.sendKeys(heater,Keys.ENTER);
-		//searchButton.click();
+		searchBox.sendKeys(heater);
+		searchButton.click();
 	}
 	
 	
